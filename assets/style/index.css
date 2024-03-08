@@ -13,14 +13,14 @@
 
 body {
   margin: 0;
-  background-color: var(--background-color); /* Adjust the color to match the design */
+  background-color: var(--background-color); 
   height: 100%;
 }
 
 /* header */
 
 .header {
-  background-color: var(--background-color); /* A dark background for the header */
+  background-color: var(--background-color); 
   color: var(--theme-color);
   padding: 10px 20px;
   display: flex;
