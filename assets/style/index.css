@@ -44,3 +44,17 @@ body {
   font-size: 18px;
 }
 
+.footer {
+  background-color: var(--theme-color);
+  color: var(--background-color);
+  text-align: center;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+
+}
+.footer a {
+  color: var(--background-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
