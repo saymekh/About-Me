@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+:root {
+  --theme-color: #ff9900;
+  --background-color: #fff;
+
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color); /* Adjust the color to match the design */
+  height: 100%;
+}
+
+/* header */
+
+.header {
+  background-color: var(--background-color); /* A dark background for the header */
+  color: var(--theme-color);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  margin: 0;
+}
+.header-nav {
+  list-style: none;
+}
+.header-nav li {
+  display: inline;
+  margin-left: 10px;
+}
+.header-nav li a {
+  color: var(--theme-color);
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
