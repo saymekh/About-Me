@@ -60,12 +60,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent url(../image/background.jpg) no-repeat center center/cover;
   background-color: var(--background-color);
   color: var(--theme-color);
   height: 100vh; 
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  margin-bottom: 200px;
 }
 
 .hero-banner h1 {
@@ -80,19 +82,19 @@ body {
 }
 
 button {
-  background-color: var(--background-color);
-  color: var(--theme-color);
+  background-color: var(--theme-color);
+  color: var(--background-color);
   border-radius: 3px;
   border: 1px solid var(--theme-color);
   width: 100px;
   height: 30px;
-  margin-top: 60px;
+  margin-top: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
-  background-color: var(--theme-color);
-  color: var(--background-color);
+  background-color: var(--background-color);
+  color: var(--theme-color);
   cursor: pointer; 
 }
 
@@ -133,7 +135,7 @@ p {
 }
 
 .content {
-  min-height: 95vh;
+  min-height: 80vh;
   padding: 20px;
   display: flex;
   gap: 20px;
