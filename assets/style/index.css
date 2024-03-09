@@ -90,6 +90,18 @@ a:first-child {
   padding-top: 70px;
 }
 
+/* animation */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 2s; 
+}
+
 /* footer */
 
 .footer {
@@ -101,6 +113,7 @@ a:first-child {
   width: 100%;
 
 }
+
 .footer a {
   color: var(--background-color);
   text-decoration: none;
