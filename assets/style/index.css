@@ -3,7 +3,6 @@
 :root {
   --theme-color: #ff9900;
   --background-color: #fff;
-
 }
 
 .container {
@@ -27,9 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header h1 {
-  margin: 0;
-}
+
 .header-nav {
   list-style: none;
 }
@@ -43,6 +40,38 @@ body {
   padding: 5px 10px;
   font-size: 18px;
 }
+
+/* content */
+
+h1 {
+  font-size: 35px;
+}
+
+#full-name {
+  color: var(--theme-color);
+}
+
+.left-content {
+  width:48vw;
+
+  float: left;
+}
+
+.content {
+  min-height: 95vh;
+  padding: 20px;
+  display: flex;
+}
+
+#statement-two {
+  padding-top: 20px;
+}
+
+#statement-one {
+  padding-top: 70px;
+}
+
+/* footer */
 
 .footer {
   background-color: var(--theme-color);
