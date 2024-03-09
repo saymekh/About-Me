@@ -14,6 +14,7 @@ body {
   margin: 0;
   background-color: var(--background-color); 
   height: 100%;
+  font-family: "Outfit", sans-serif;
 }
 
 /* header */
@@ -44,23 +45,41 @@ body {
 /* content */
 
 h1 {
-  font-size: 35px;
+  font-size: 70px;
+  line-height: 70px;
 }
 
 #full-name {
   color: var(--theme-color);
 }
 
+p {
+  font-size: 18px;
+}
+
 .left-content {
   width:48vw;
-
   float: left;
+}
+
+.icons a {
+  color: var(--theme-color);
+  font-size: 30px;
+  float: right;
+  margin-top: 15px;
+  padding-right: 10px;
+}
+
+a:first-child {
+  padding-right: 0;
 }
 
 .content {
   min-height: 95vh;
   padding: 20px;
   display: flex;
+  gap: 20px;
+  margin-top: 110px;
 }
 
 #statement-two {
