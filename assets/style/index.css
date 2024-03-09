@@ -3,6 +3,7 @@
 :root {
   --theme-color: #ff9900;
   --background-color: #fff;
+  --text-color: #1a1a1a;
 }
 
 .container {
@@ -42,11 +43,73 @@ body {
   font-size: 18px;
 }
 
+.header-nav li a:hover {
+  text-decoration: underline; /* This will add the underline on hover */
+  text-decoration-color: var(--theme-color); /* Change #fff to the color you want for the underline */
+}
+
+/* hero banner */
+
+.hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color); /* Adjust the color to your preference */
+  color: var(--theme-color);
+  height: 100vh; /* Adjust the height as needed */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hero-banner h1 {
+  margin: 0;
+  font-size: 3em;
+  color: var(--text-color);
+}
+
+.hero-banner p {
+  font-size: 1.5em;
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--background-color);
+  color: var(--theme-color);
+  border-radius: 3px;
+  border: 1px solid var(--theme-color);
+  width: 100px;
+  height: 30px;
+  margin-top: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: var(--theme-color); /* Color changes when hovering */
+  color: var(--background-color); /* Text color on hover */
+  cursor: pointer; /* Changes the mouse cursor to a pointer */
+}
+
 /* content */
+
+.contact {
+  font-size: 80px;
+  text-align: center;
+}
+
+.about {
+  font-size: 80px;
+  text-align: center;
+}
+
+#me {
+  color: var(--theme-color);
+}
 
 h1 {
   font-size: 70px;
   line-height: 70px;
+  color: var(--text-color);
 }
 
 #full-name {
@@ -55,6 +118,7 @@ h1 {
 
 p {
   font-size: 18px;
+  color: var(--text-color);
 }
 
 .left-content {
@@ -62,16 +126,26 @@ p {
   float: left;
 }
 
-.icons a {
-  color: var(--theme-color);
-  font-size: 30px;
-  float: right;
-  margin-top: 15px;
-  padding-right: 10px;
+.icons {
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
-a:first-child {
-  padding-right: 0;
+i:hover {
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform: scale(1.1);
+  color: #007BAC;
+}
+
+.icons a {
+  color: var(--theme-color);
+  font-size: 160px;
+  margin-top: 15px;
+  padding: 0 90px;
 }
 
 .content {
