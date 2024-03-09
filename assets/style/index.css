@@ -50,8 +50,8 @@ body {
 }
 
 .header-nav li a:hover {
-  text-decoration: underline; /* This will add the underline on hover */
-  text-decoration-color: var(--theme-color); /* Change #fff to the color you want for the underline */
+  text-decoration: underline; 
+  text-decoration-color: var(--theme-color); 
 }
 
 /* hero banner */
@@ -60,9 +60,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-color); /* Adjust the color to your preference */
+  background-color: var(--background-color);
   color: var(--theme-color);
-  height: 100vh; /* Adjust the height as needed */
+  height: 100vh; 
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
@@ -91,9 +91,9 @@ button {
 }
 
 button:hover {
-  background-color: var(--theme-color); /* Color changes when hovering */
-  color: var(--background-color); /* Text color on hover */
-  cursor: pointer; /* Changes the mouse cursor to a pointer */
+  background-color: var(--theme-color);
+  color: var(--background-color);
+  cursor: pointer; 
 }
 
 /* content */
@@ -113,7 +113,7 @@ button:hover {
 }
 
 h1 {
-  font-size: var(--text-size);
+  font-size: 50px;
   line-height: 70px;
   color: var(--text-color);
 }
@@ -132,28 +132,6 @@ p {
   float: left;
 }
 
-.icons {
-  height: 70vh;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  transition: transform 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-}
-
-i:hover {
-  transition: transform 0.3s ease, color 0.3s ease;
-  transform: scale(1.1);
-  color: var(--hover-color);
-}
-
-.icons a {
-  color: var(--theme-color);
-  font-size: 160px;
-  margin-top: 15px;
-  padding: 0 90px;
-}
-
 .content {
   min-height: 95vh;
   padding: 20px;
@@ -168,6 +146,11 @@ i:hover {
 
 #statement-one {
   padding-top: 70px;
+}
+
+.right-content img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* animation */
@@ -186,12 +169,12 @@ i:hover {
 
 .contact-me-section {
   height: 50vh;
-  background-color: #f0f0f0; /* Light gray background */
+  background-color: #f0f0f0;
   padding: 20px;
-  max-width: 600px; /* Adjust based on your layout */
-  margin: 0 auto; /* Center the section */
+  max-width: 600px;
+  margin: 0 auto;
   text-align: center;
-  border-radius: 8px; /* Optional: adds rounded corners */
+  border-radius: 8px;
   background-color: var(--background-color);
   margin-top: 40px;
 }
@@ -208,18 +191,19 @@ i:hover {
   display: inline-block;
   margin: 10px;
   padding: 10px;
-  background-color: var(--theme-color); /* A nice blue */
-  color: var(--background-color);
+  background-color: var(--background-color); 
+  color: var(--theme-color);
   text-decoration: none;
   border-radius: 5px;
+  border: 1px solid var(--theme-color);
   transition: background-color 0.3s ease-in-out;
 }
 
 .contact-link:hover {
-  background-color: var(--hover-color); /* A darker shade of blue for hover effect */
+  color: var(--background-color);
+  background-color: var(--theme-color); 
 }
 
-/* Additional style for the phone number to match the links */
 .contact-link.phone {
   cursor: default;
 }
@@ -233,11 +217,39 @@ i:hover {
   padding: 20px 0;
   bottom: 0;
   width: 100%;
-
 }
 
 .footer a {
   color: var(--background-color);
   text-decoration: none;
   margin: 0 10px;
+}
+
+.right-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+  .content, .hero-banner, .contact-me-section, .footer {
+      padding: 10px;
+  }
+
+  .content {
+      display: flex;
+      flex-direction: column; 
+  }
+
+  .left-content, .right-content {
+      width: 100%;
+  }
+  img {
+    margin: 100px 0;
+    width: 100%;
+  }
+  .header .container {
+    display: inline-block;
+  }
 }
