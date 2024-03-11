@@ -20,6 +20,10 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* header */
 
 .header {
@@ -93,9 +97,22 @@ button {
 }
 
 button:hover {
+  animation: pulse 1s infinite;
   background-color: var(--background-color);
   color: var(--theme-color);
   cursor: pointer; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* content */
@@ -169,16 +186,21 @@ p {
 
 /* contact me */
 
+.contact-section {
+  background-color: #fcfcfc;
+  margin-top: 50px;
+  height: 70%;
+}
+
 .contact-me-section {
   height: 50vh;
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
   border-radius: 8px;
-  background-color: var(--background-color);
-  margin-top: 40px;
+  background-color: #fcfcfc;
 }
 
 .contact-me-section h2 {
@@ -187,28 +209,36 @@ p {
 
 .contact-info {
   margin-top: 20px;
+  font-size: 50px;
 }
 
-.contact-link {
-  width: 100px;
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
-  background-color: var(--background-color); 
+.contact-info a {
+  padding-right: 50px;
+  color: var(--text-color);
+}
+
+.contact-info a:last-child {
+  padding-right: 0;
+}
+
+.contact-info i:hover {
   color: var(--theme-color);
-  text-decoration: none;
-  border-radius: 5px;
-  border: 1px solid var(--theme-color);
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s, color 0.3s;
+  animation: pulse 1s infinite;
+  background-color: var(--background-color);
+  cursor: pointer; 
 }
 
-.contact-link:hover {
-  color: var(--background-color);
-  background-color: var(--theme-color); 
-}
-
-.contact-link.phone {
-  cursor: default;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* footer */
@@ -217,19 +247,20 @@ p {
   justify-content: space-between;
   background-color: var(--theme-color);
   color: var(--background-color);
-  text-align: center;
   padding: 20px 0;
   bottom: 0;
   width: 100%;
-  text-align: left;
 }
 
 .footer a {
   color: var(--background-color);
   text-decoration: none;
   margin: 0 10px;
-  text-align: left;
   margin-left: 30px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .copyright {
